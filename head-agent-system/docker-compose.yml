@@ -1,0 +1,48 @@
+# Head Agent System — local production-like stack.
+# `docker compose up` brings up the supervisor, Postgres and Redis.
+# The app boots even if DB/Redis are down (in-memory fallback), but wiring
+# them here mirrors the production topology.
+services:
+  head-agent:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://headagent:headagent@postgres:5432/headagent
+      REDIS_URL: redis://redis:6379
+      API_PORT: 8787
+      WS_PORT: 8788
+    ports:
+      - "8787:8787"
+      - "8788:8788"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: headagent
+      POSTGRES_PASSWORD: headagent
+      POSTGRES_DB: headagent
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./src/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U headagent"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

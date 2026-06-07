@@ -1,0 +1,33 @@
+{
+  "id": "documentary",
+  "label": "Documentary",
+  "font": { "family": "Georgia", "size": 56, "bold": false },
+  "colors": {
+    "text": "#FFFFFF",
+    "highlight": "#F5D76E",
+    "outline": "#000000",
+    "background": "#000000"
+  },
+  "outlineWidth": 2,
+  "shadow": 1,
+  "backgroundBox": true,
+  "position": "lower_third",
+  "uppercase": false,
+  "segment": {
+    "maxWords": 10,
+    "maxCharsPerLine": 34,
+    "maxLines": 2,
+    "maxDuration": 4.0,
+    "maxGap": 1.0
+  },
+  "emoji": { "enabled": false, "maxPerSegment": 0 },
+  "motion": {
+    "enabled": true,
+    "default": "fade",
+    "keyword": "fade",
+    "urgent": "fade",
+    "cta": "fade",
+    "storytelling": "fade"
+  },
+  "safeMargins": { "topPct": 0.12, "bottomPct": 0.18 }
+}

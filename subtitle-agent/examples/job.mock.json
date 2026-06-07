@@ -1,0 +1,14 @@
+{
+  "project_id": "demo_mock",
+  "input_file": "./sample.mp4",
+  "transcription_provider": "mock",
+  "subtitle_mode": "word_by_word",
+  "output_formats": ["srt", "ass", "json"],
+  "style_preset": "tiktok_bold",
+  "keywords": ["AI", "money", "secret"],
+  "emoji_enabled": true,
+  "motion_text_enabled": true,
+  "burned_in": false,
+  "transcript": "This is the hook you cannot miss. The SECRET to making money fast is simple. Stop scrolling now and learn this AI trick for free today.",
+  "video_format": { "aspectRatio": "9:16", "width": 1080, "height": 1920 }
+}

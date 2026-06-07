@@ -1,0 +1,19 @@
+{
+  "$schema": "../src/types/index.ts#AgentProfileTemplate",
+  "role": "video_editor_agent",
+  "name": "Splice",
+  "department": "production",
+  "skills": ["timeline_editing", "pacing", "rendering"],
+  "tools": ["timeline.assemble", "render.export", "effect.apply"],
+  "permissions": ["read:assets", "read:audio", "write:renders"],
+  "taskScope": "Assemble voiceover, b-roll, captions and music into a finished 9:16 vertical export.",
+  "inputFormat": "asset_pack + audio + subtitles",
+  "outputFormat": "video { file, aspect_ratio:'9:16', resolution:'1080x1920', duration }",
+  "performanceTarget": 82,
+  "policyRules": ["aspect_9x16", "av_sync", "no_copyrighted_audio"],
+  "reportingManager": "head_agent_supervisor",
+  "backupAgent": null,
+  "escalationPath": ["head_agent_supervisor", "hr_manager_agent"],
+  "missionCritical": true,
+  "heartbeat": { "intervalMs": 15000, "endpoint": "POST /agents/:id/heartbeat" }
+}

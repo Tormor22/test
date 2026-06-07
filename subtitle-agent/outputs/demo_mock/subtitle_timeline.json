@@ -1,0 +1,316 @@
+{
+  "project_id": "demo_mock",
+  "provider": "mock",
+  "language": "en",
+  "duration_seconds": 6,
+  "subtitle_mode": "word_by_word",
+  "video_format": {
+    "aspectRatio": "9:16",
+    "width": 1080,
+    "height": 1920
+  },
+  "style_preset": "tiktok_bold",
+  "style": {
+    "id": "tiktok_bold",
+    "label": "TikTok Bold",
+    "font": {
+      "family": "Arial Black",
+      "size": 96,
+      "bold": true
+    },
+    "colors": {
+      "text": "#FFFFFF",
+      "highlight": "#FFE600",
+      "outline": "#000000",
+      "background": "#000000"
+    },
+    "outlineWidth": 7,
+    "shadow": 2,
+    "backgroundBox": false,
+    "position": "center",
+    "uppercase": true,
+    "segment": {
+      "maxWords": 4,
+      "maxCharsPerLine": 16,
+      "maxLines": 2,
+      "maxDuration": 2.2,
+      "maxGap": 0.6
+    },
+    "emoji": {
+      "enabled": true,
+      "maxPerSegment": 1
+    },
+    "motion": {
+      "enabled": true,
+      "default": "none",
+      "keyword": "pop",
+      "urgent": "shake",
+      "cta": "zoom",
+      "storytelling": "fade"
+    },
+    "safeMargins": {
+      "topPct": 0.12,
+      "bottomPct": 0.2
+    }
+  },
+  "generated_at": "2026-06-07T01:38:56.178Z",
+  "subtitle_segments": [
+    {
+      "start": 0,
+      "end": 0.888,
+      "text": "This is the hook",
+      "words": [
+        {
+          "word": "This",
+          "start": 0,
+          "end": 0.196,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "is",
+          "start": 0.231,
+          "end": 0.427,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "the",
+          "start": 0.462,
+          "end": 0.658,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "hook",
+          "start": 0.692,
+          "end": 0.888,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 0.923,
+      "end": 1.581,
+      "text": "you cannot miss.",
+      "words": [
+        {
+          "word": "you",
+          "start": 0.923,
+          "end": 1.119,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "cannot",
+          "start": 1.154,
+          "end": 1.35,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "miss.",
+          "start": 1.385,
+          "end": 1.581,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 1.615,
+      "end": 2.504,
+      "text": "The SECRET to making",
+      "words": [
+        {
+          "word": "The",
+          "start": 1.615,
+          "end": 1.811,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "SECRET",
+          "start": 1.846,
+          "end": 2.042,
+          "highlight": true,
+          "emoji": "💡",
+          "motion": "pop"
+        },
+        {
+          "word": "to",
+          "start": 2.077,
+          "end": 2.273,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "making",
+          "start": 2.308,
+          "end": 2.504,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 2.538,
+      "end": 3.427,
+      "text": "money fast is simple.",
+      "words": [
+        {
+          "word": "money",
+          "start": 2.538,
+          "end": 2.734,
+          "highlight": true,
+          "emoji": "💰",
+          "motion": "pop"
+        },
+        {
+          "word": "fast",
+          "start": 2.769,
+          "end": 2.965,
+          "highlight": true,
+          "emoji": null,
+          "motion": "shake"
+        },
+        {
+          "word": "is",
+          "start": 3,
+          "end": 3.196,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "simple.",
+          "start": 3.231,
+          "end": 3.427,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 3.462,
+      "end": 4.35,
+      "text": "Stop scrolling now and",
+      "words": [
+        {
+          "word": "Stop",
+          "start": 3.462,
+          "end": 3.658,
+          "highlight": true,
+          "emoji": "🛑",
+          "motion": "pop"
+        },
+        {
+          "word": "scrolling",
+          "start": 3.692,
+          "end": 3.888,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "now",
+          "start": 3.923,
+          "end": 4.119,
+          "highlight": true,
+          "emoji": null,
+          "motion": "shake"
+        },
+        {
+          "word": "and",
+          "start": 4.154,
+          "end": 4.35,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 4.385,
+      "end": 5.273,
+      "text": "learn this AI trick",
+      "words": [
+        {
+          "word": "learn",
+          "start": 4.385,
+          "end": 4.581,
+          "highlight": true,
+          "emoji": "💡",
+          "motion": "zoom"
+        },
+        {
+          "word": "this",
+          "start": 4.615,
+          "end": 4.811,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "AI",
+          "start": 4.846,
+          "end": 5.042,
+          "highlight": true,
+          "emoji": null,
+          "motion": "pop"
+        },
+        {
+          "word": "trick",
+          "start": 5.077,
+          "end": 5.273,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        }
+      ]
+    },
+    {
+      "start": 5.308,
+      "end": 5.965,
+      "text": "for free today.",
+      "words": [
+        {
+          "word": "for",
+          "start": 5.308,
+          "end": 5.504,
+          "highlight": false,
+          "emoji": null,
+          "motion": "none"
+        },
+        {
+          "word": "free",
+          "start": 5.538,
+          "end": 5.734,
+          "highlight": true,
+          "emoji": "🎁",
+          "motion": "pop"
+        },
+        {
+          "word": "today.",
+          "start": 5.769,
+          "end": 5.965,
+          "highlight": true,
+          "emoji": null,
+          "motion": "shake"
+        }
+      ]
+    }
+  ]
+}

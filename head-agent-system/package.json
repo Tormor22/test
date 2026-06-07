@@ -1,0 +1,45 @@
+{
+  "name": "head-agent-system",
+  "version": "0.2.0",
+  "description": "Supervisor-controlled multi-agent system: every AI agent receives commands ONLY through the Supervisor Agent. CLI + Dashboard API + strict validation + correction loop + audit log.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "supervisor": "dist/cli.js"
+  },
+  "scripts": {
+    "supervisor": "tsx src/cli.ts",
+    "dev": "tsx watch src/cli.ts",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ai-agent",
+    "supervisor",
+    "orchestrator",
+    "multi-agent",
+    "workflow",
+    "tiktok",
+    "shorts",
+    "reels",
+    "agentops"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.102.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.1.8"
+  }
+}

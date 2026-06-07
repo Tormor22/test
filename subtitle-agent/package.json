@@ -1,0 +1,46 @@
+{
+  "name": "subtitle-agent",
+  "version": "0.1.0",
+  "description": "Modular AI Subtitle Agent: transcribes audio/video, generates word-by-word captions, highlights keywords, adds emoji + motion text, and exports SRT / ASS / JSON / burned-in MP4 for TikTok, Shorts and Reels.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "subtitle-agent": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "subtitle-agent": "tsx src/cli.ts",
+    "subtitle-agent:example": "tsx src/cli.ts --job ./examples/job.example.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "subtitles",
+    "captions",
+    "whisper",
+    "transcription",
+    "ffmpeg",
+    "remotion",
+    "tiktok",
+    "shorts",
+    "reels",
+    "ai-agent",
+    "srt",
+    "ass"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}

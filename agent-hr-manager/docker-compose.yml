@@ -1,0 +1,48 @@
+# Agent HR Manager — local production-like stack.
+# `docker compose up` brings up the HR manager, Postgres and Redis.
+# The app boots even if DB/Redis are down (in-memory fallback), but wiring
+# them here mirrors the production topology.
+services:
+  agent-hr:
+    build: .
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://agenthr:agenthr@postgres:5432/agenthr
+      REDIS_URL: redis://redis:6379
+      API_PORT: 8989
+      WS_PORT: 8990
+    ports:
+      - "8989:8989"
+      - "8990:8990"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: agenthr
+      POSTGRES_PASSWORD: agenthr
+      POSTGRES_DB: agenthr
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./src/database/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U agenthr"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+volumes:
+  pgdata:

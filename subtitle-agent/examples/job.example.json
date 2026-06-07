@@ -1,0 +1,18 @@
+{
+  "project_id": "project_001",
+  "input_file": "./sample.mp4",
+  "language": "th",
+  "transcription_provider": "openai",
+  "subtitle_mode": "word_by_word",
+  "output_formats": ["srt", "ass", "json", "burned_in"],
+  "style_preset": "tiktok_bold",
+  "keywords": ["AI", "money", "secret", "warning", "เงิน", "ฟรี", "ด่วน"],
+  "emoji_enabled": true,
+  "motion_text_enabled": true,
+  "burned_in": true,
+  "video_format": {
+    "aspectRatio": "9:16",
+    "width": 1080,
+    "height": 1920
+  }
+}

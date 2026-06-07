@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial Black,96,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,7,2,5,90,90,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.23,Default,,0,0,0,,{\c&H00FFFFFF}THIS
+Dialogue: 0,0:00:00.23,0:00:00.46,Default,,0,0,0,,{\c&H00FFFFFF}IS
+Dialogue: 0,0:00:00.46,0:00:00.69,Default,,0,0,0,,{\c&H00FFFFFF}THE
+Dialogue: 0,0:00:00.69,0:00:00.92,Default,,0,0,0,,{\c&H00FFFFFF}HOOK
+Dialogue: 0,0:00:00.92,0:00:01.15,Default,,0,0,0,,{\c&H00FFFFFF}YOU
+Dialogue: 0,0:00:01.15,0:00:01.39,Default,,0,0,0,,{\c&H00FFFFFF}CANNOT
+Dialogue: 0,0:00:01.39,0:00:01.62,Default,,0,0,0,,{\c&H00FFFFFF}MISS.
+Dialogue: 0,0:00:01.62,0:00:01.85,Default,,0,0,0,,{\c&H00FFFFFF}THE
+Dialogue: 0,0:00:01.85,0:00:02.08,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx55\fscy55\t(0,130,\fscx100\fscy100)}SECRET 💡
+Dialogue: 0,0:00:02.08,0:00:02.31,Default,,0,0,0,,{\c&H00FFFFFF}TO
+Dialogue: 0,0:00:02.31,0:00:02.54,Default,,0,0,0,,{\c&H00FFFFFF}MAKING
+Dialogue: 0,0:00:02.54,0:00:02.77,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx55\fscy55\t(0,130,\fscx100\fscy100)}MONEY 💰
+Dialogue: 0,0:00:02.77,0:00:03.00,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(20,20)\t(0,60,\frz-4)\t(60,120,\frz4)\t(120,180,\frz0)}FAST
+Dialogue: 0,0:00:03.00,0:00:03.23,Default,,0,0,0,,{\c&H00FFFFFF}IS
+Dialogue: 0,0:00:03.23,0:00:03.46,Default,,0,0,0,,{\c&H00FFFFFF}SIMPLE.
+Dialogue: 0,0:00:03.46,0:00:03.69,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx55\fscy55\t(0,130,\fscx100\fscy100)}STOP 🛑
+Dialogue: 0,0:00:03.69,0:00:03.92,Default,,0,0,0,,{\c&H00FFFFFF}SCROLLING
+Dialogue: 0,0:00:03.92,0:00:04.15,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(20,20)\t(0,60,\frz-4)\t(60,120,\frz4)\t(120,180,\frz0)}NOW
+Dialogue: 0,0:00:04.15,0:00:04.38,Default,,0,0,0,,{\c&H00FFFFFF}AND
+Dialogue: 0,0:00:04.38,0:00:04.62,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx35\fscy35\t(0,160,\fscx100\fscy100)}LEARN 💡
+Dialogue: 0,0:00:04.62,0:00:04.85,Default,,0,0,0,,{\c&H00FFFFFF}THIS
+Dialogue: 0,0:00:04.85,0:00:05.08,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx55\fscy55\t(0,130,\fscx100\fscy100)}AI
+Dialogue: 0,0:00:05.08,0:00:05.31,Default,,0,0,0,,{\c&H00FFFFFF}TRICK
+Dialogue: 0,0:00:05.31,0:00:05.54,Default,,0,0,0,,{\c&H00FFFFFF}FOR
+Dialogue: 0,0:00:05.54,0:00:05.77,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(40,40)\fscx55\fscy55\t(0,130,\fscx100\fscy100)}FREE 🎁
+Dialogue: 0,0:00:05.77,0:00:05.96,Default,,0,0,0,,{\c&H0000E6FF\b1\fad(20,20)\t(0,60,\frz-4)\t(60,120,\frz4)\t(120,180,\frz0)}TODAY.

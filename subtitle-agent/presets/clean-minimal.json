@@ -1,0 +1,33 @@
+{
+  "id": "clean_minimal",
+  "label": "Clean Minimal",
+  "font": { "family": "Arial", "size": 60, "bold": false },
+  "colors": {
+    "text": "#FFFFFF",
+    "highlight": "#FFFFFF",
+    "outline": "#000000",
+    "background": "#000000"
+  },
+  "outlineWidth": 2,
+  "shadow": 1,
+  "backgroundBox": false,
+  "position": "bottom",
+  "uppercase": false,
+  "segment": {
+    "maxWords": 8,
+    "maxCharsPerLine": 30,
+    "maxLines": 2,
+    "maxDuration": 3.5,
+    "maxGap": 0.8
+  },
+  "emoji": { "enabled": false, "maxPerSegment": 0 },
+  "motion": {
+    "enabled": true,
+    "default": "none",
+    "keyword": "fade",
+    "urgent": "fade",
+    "cta": "fade",
+    "storytelling": "fade"
+  },
+  "safeMargins": { "topPct": 0.12, "bottomPct": 0.16 }
+}

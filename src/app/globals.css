@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  @apply bg-ink-950 text-slate-200 antialiased;
+  font-family: system-ui, -apple-system, "Segoe UI", "Leelawadee UI",
+    "Noto Sans Thai", Tahoma, sans-serif;
+  background-image:
+    radial-gradient(70% 50% at 50% -10%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(50% 50% at 100% 0%, rgba(167, 139, 250, 0.1), transparent 55%),
+    radial-gradient(60% 60% at 0% 100%, rgba(52, 211, 153, 0.08), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Thin futuristic scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 9999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/10 bg-white/[0.04] backdrop-blur-xl;
+  }
+  .glass-strong {
+    @apply border border-white/10 bg-ink-850/70 backdrop-blur-2xl;
+  }
+  .neon-text {
+    text-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
+  }
+}
+
+/* Animated conic gradient ring used behind avatars */
+.conic-ring {
+  background: conic-gradient(
+    from 0deg,
+    rgba(34, 211, 238, 0.9),
+    rgba(167, 139, 250, 0.9),
+    rgba(52, 211, 153, 0.9),
+    rgba(34, 211, 238, 0.9)
+  );
+}

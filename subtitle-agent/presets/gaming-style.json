@@ -1,0 +1,33 @@
+{
+  "id": "gaming_style",
+  "label": "Gaming Style",
+  "font": { "family": "Impact", "size": 92, "bold": true },
+  "colors": {
+    "text": "#00FF66",
+    "highlight": "#FF2D55",
+    "outline": "#000000",
+    "background": "#000000"
+  },
+  "outlineWidth": 6,
+  "shadow": 3,
+  "backgroundBox": false,
+  "position": "center",
+  "uppercase": true,
+  "segment": {
+    "maxWords": 3,
+    "maxCharsPerLine": 14,
+    "maxLines": 2,
+    "maxDuration": 1.8,
+    "maxGap": 0.5
+  },
+  "emoji": { "enabled": true, "maxPerSegment": 2 },
+  "motion": {
+    "enabled": true,
+    "default": "pop",
+    "keyword": "bounce",
+    "urgent": "shake",
+    "cta": "zoom",
+    "storytelling": "pop"
+  },
+  "safeMargins": { "topPct": 0.12, "bottomPct": 0.2 }
+}
